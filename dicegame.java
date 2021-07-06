@@ -1,7 +1,15 @@
+import java.util.Scanner;
 public class dicegame{
     public static void main(String[] args){
 	Dice d1 = new Dice();
 	Dice d2 = new Dice();
+
+	Scanner scanner = new Scanner(System.in);
+
+	System.out.println("What is your name?");
+	String name = scanner.next();
+
+	System.out.println("Hello," + name + "!");
 
 
 	System.out.println("Die 1:" + d1.getNumber());
